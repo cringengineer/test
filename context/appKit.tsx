@@ -17,7 +17,7 @@ const metadata = {
 createAppKit({
     adapters: [new Ethers5Adapter()],
     metadata: metadata,
-    networks: [mainnet, bsc],
+    networks: [bsc],
     projectId,
     features: {
         analytics: true,
