@@ -12,9 +12,9 @@
     "@reown/appkit": "^1.8.14",
     "@reown/appkit-adapter-ethers5": "^1.8.14",
     "ethers": "^5.7.2",
-    "next": "16.0.3",
-    "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "next": "^15",
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -22,7 +22,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.0.3",
+    "eslint-config-next": "^15",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
