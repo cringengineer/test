@@ -21,6 +21,8 @@ export default function Home() {
         startDate: "",
         token: "",
     });
+    const [error, setError] = useState<string>('');
+
     const appKitProviderObject = useAppKitProvider("eip155");
 
     let provider: providers.Provider | undefined;
@@ -69,6 +71,8 @@ export default function Home() {
 
         } catch (error) {
             console.error("Error fetching contract data:", error);
+
+            setError('Check your network. Make sure that your active network is BSC.')
         } finally {
             setLoading(false);
         }
@@ -102,6 +106,7 @@ export default function Home() {
                 >
                     {loading ? "Loading..." : isWalletConnected ? "LOAD Contract Data" : "Connect Wallet to Load"}
                 </button>
+                <span className='text-red-600/50'>{error ? error : null}</span>
             </div>
 
             {showModal && (
